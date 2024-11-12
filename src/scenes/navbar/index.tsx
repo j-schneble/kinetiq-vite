@@ -25,21 +25,18 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         className={`${navbarBackground} ${flexBetween}  bg-zinc-950 border-b border-zinc-800/20 fixed top-0 py-4 z-30 w-full `}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
-          <div className={`${flexBetween} w-full gap-16`}>
+          <div className={`${flexBetween} w-full gap-12`}>
             {/* LEFT SIDE */}
+
             <img className='' alt="logo" src={Logo} />
 
             {/* RIGHT SIDE */}
             {/* {isAboveMediumScreens ? ( */}
-              <div className={`${flexBetween} text-zinc-400 antialiased w-full`}>
-                <div className={`${flexBetween} text-zinc-400 antialiased gap-8 text-sm`}>
+              <div className={`${flexBetween} text-white/75 antialiased w-full`}>
+                <div className={`${flexBetween}  antialiased gap-3 text-sm`}>
+
                   <Link
-                    page="Home"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Benefits"
+                    page="Access"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
