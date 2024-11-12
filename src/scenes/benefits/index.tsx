@@ -1,11 +1,10 @@
-import ActionButton from "@/shared/ActionButton";
 import HText from "@/shared/HText";
 import { BenefitType, SelectedPage } from "@/shared/types";
 import { SiAegisauthenticator } from "react-icons/si";
 import { IoPeople } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import Benefitgraph from "@/assets/Benefit.png";
+import Deximg3 from "@/assets/deximg3.png";
 import Benefit from "./Benefit";
 
 const benefits: Array<BenefitType> = [
@@ -42,7 +41,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="benefits" className="mx-auto  min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -59,7 +58,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>MORE THAN JUST GYM.</HText>
-          <p className="mt-3 mb-7 text-sm">
+          <p className="mt-3 mb-8 text-black/90 text-sm">
             We provide world class fitness equipment, trainers and classes to
             get you to your ultimate fitness goals with ease. We provide true
             care into each and every member.
@@ -68,7 +67,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
         {/* BENEFITS */}
         <motion.div
-          className="mt-5 items-center  justify-between gap-8 md:flex"
+          className="mt-5 items-center  justify-between gap-3 md:flex"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -91,7 +90,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           <img
             className="mx-auto"
             alt="benefits-page-graphic"
-            src={Benefitgraph}
+            src={Deximg3}
           />
 
           {/* DESCRIPTION */}
@@ -102,7 +101,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             </div>
 
             {/* DESCRIPT */}
-            <motion.div
+            {/* <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -112,17 +111,15 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <p className="my-5">
+              <p className="my-8 text-justify pt-8">
               One-on-One training at Kinetiq is backed by our Health Advisory Board, and the EQX OS. This proprietary operating system, built to advance full health optimization, decodes and unlocks the peak of your potential, redefining High-Performance Living on a whole new scale.
               This is more than training, it’s the first-of-its-kind, data-driven and expert led path to unlocking your absolute best and achieving extraordinary results.
               </p>
 
-            </motion.div>
+            </motion.div> */}
 
             {/* BUTTON */}
-            <div className="relative mt-16">
 
-            </div>
           </div>
         </div>
       </motion.div>

@@ -69,9 +69,9 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className=" text-white md:w-3/5">
-            <HText>OUR CLASSES</HText>
-            <p className="py-5 antialiased">
+          <div className="md:w-3/5">
+            <h1 className='basis-3/5 text-white antialiased text-3xl font-bold'>OUR CLASSES</h1>
+            <p className="py-5 text-white/90 antialiased">
             This is more than training, it’s the first-of-its-kind, data-driven and expert led path to unlocking your absolute best and achieving extraordinary results.
             </p>
           </div>

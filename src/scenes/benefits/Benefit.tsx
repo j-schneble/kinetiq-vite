@@ -18,22 +18,22 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
   return (
     <motion.div
       variants={childVariant}
-      className="mt-5 rounded-md border-2 bg-zinc-200  border-gray-100 px-5 py-8 text-center"
+      className="mt-5 rounded-md border-2 bg-gradient-to-bl from-zinc-400/20 via-slate-200/50 to-zinc-400/20 border-zinc-200/20 px-5 py-8 text-center"
     >
       <div className="mb-4 flex justify-center">
-        <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+        <div className="rounded-full border-2 border-zinc-200/20 bg-slate-200/50 p-4">
           {icon}
         </div>
       </div>
 
-      <h4 className="font-bold ">{title}</h4>
-      <p className="my-3 ">{description}</p>
+      <h4 className="font-bold text-black/90">{title}</h4>
+      <p className="my-3 text-zinc-600">{description}</p>
       <AnchorLink
-        className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+        className="text-sm font-bold text-black/80  hover:text-secondary-500"
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
       >
-        <p>Learn More</p>
+        <p className='text-black/30'>Learn More</p>
       </AnchorLink>
     </motion.div>
   );
